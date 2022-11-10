@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 .container {
   background-color: #f2f5f8;
-  width: 1324px;
+  width: 100%;
 }
 .container .top-section {
   display: flex;
@@ -149,7 +149,7 @@
 .container .hero-section {
   display: flex;
   justify-content: center;
-  width: 1088px;
+  width: 82%;
   margin: 0 auto;
   background-color: #f2f5f8;
 }
@@ -233,6 +233,7 @@
 }
 .container .hero-section .hero-section-main .hero-section-slider .hero-section-foot .circles .circle:hover {
   background-color: #8172d5;
+  cursor: pointer;
 }
 .container .hero-section .hero-section-aside {
   margin-top: 44px;
@@ -339,7 +340,7 @@
   font-weight: 500;
   color: #133b3a;
 }
-.container .question-section {
+.container .accordion-section {
   max-width: 1088px;
   margin: 0 auto;
   display: grid;
@@ -348,28 +349,43 @@
        column-gap: 16px;
   row-gap: 10px;
 }
-.container .question-section .question-box {
+.container .accordion-section .accordion-box {
   width: 100%;
   height: 82px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #fff;
   border-radius: 12px;
 }
-.container .question-section .question-box .question-text-arrow {
-  width: 85%;
+.container .accordion-section .accordion-box .accordion-down {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 12px;
 }
-.container .question-section .question-box .question-text-arrow p {
+.container .accordion-section .accordion-box .accordion-text {
   color: #8172d5;
   font-size: 18px;
   font-family: "roboto", sans-serif;
   font-weight: 400;
 }
-.container .question-section .question-box .question-text-arrow img:hover {
+.container .accordion-section .accordion-box .accordion-text-arrow {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .accordion-section .accordion-box .accordion-text-arrow p {
+  color: #8172d5;
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+}
+.container .accordion-section .accordion-box .accordion-text-arrow img:hover {
   transform: rotate(360deg);
   transition: 2s;
   cursor: pointer;
@@ -380,8 +396,207 @@
   height: 360px;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  background-color: #fff;
 }
+.container .virtual-events-section .virtual-events-info {
+  display: flex;
+  align-items: flex-start;
+}
+.container .virtual-events-section .virtual-events-info h1 {
+  color: #8172d5;
+  font-size: 6px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  border-bottom: 1px solid #8172d5;
+  width: 44px;
+}
+.container .virtual-events-section .virtual-events-info .virtual-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding-left: 75px;
+}
+.container .virtual-events-section .virtual-events-info .virtual-info-box h2 {
+  font-size: 12px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #ffb140;
+}
+.container .virtual-events-section .virtual-events-info .virtual-info-box h3 {
+  font-size: 14px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #69a3a2;
+}
+.container .virtual-events-section .virtual-events-info .virtual-info-box h4 {
+  font-size: 24px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #133b3a;
+}
+.container .virtual-events-section .virtual-events-info .virtual-info-box button {
+  background-color: #758bfd;
+  color: #fff;
+  font-size: 10px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.container .virtual-events-section .virtual-events-info .virtual-info-box .registracion input {
+  padding: 5px;
+}
+.container .contact-section {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 196px;
+  gap: 11px;
+}
+.container .contact-section .content h1 {
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #133b3a;
+  padding: 15px 0;
+}
+.container .contact-section .content .content-img {
+  border-radius: 12px;
+}
+.container .contact-section .content .contant-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.container .contact-section .content .contant-foot button {
+  background-color: #758bfd;
+  color: #fff;
+  font-size: 10px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.container .contact-section .content .contant-foot h2 {
+  font-size: 14px;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  color: #133b3a;
+}
+.container .contact-section .content-maneger h1 {
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #133b3a;
+  padding: 15px 0;
+}
+.container .contact-section .content-maneger .content-img-one {
+  border-radius: 12px;
+}
+.container .contact-section .content-maneger h2 {
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #8172d5;
+  padding: 15px 10px;
+}
+.container .contact-section .content-maneger h3 {
+  font-size: 14px;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  color: #133b3a;
+}
+.container .people-news {
+  padding-top: 52px;
+  width: 85%;
+}
+.container .people-news p {
+  font-size: 18px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #133b3a;
+  padding: 20px 75px;
+}
+.container .people-news .people-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.container .people-news .people-cards .people-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 12px;
+  height: 400px;
+  background-color: #fff;
+}
+.container .people-news .people-cards .people-card .people-img {
+  padding: 5px 80px;
+}
+.container .people-news .people-cards .people-card .h1 {
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #133b3a;
+  transition: 1s;
+}
+.container .people-news .people-cards .people-card .h2 {
+  font-size: 12px;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  color: #69a3a2;
+}
+.container .feedback-section {
+  background-color: #f7fdfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0 30px 0;
+}
+.container .feedback-section button {
+  background-color: #758bfd;
+  color: #fff;
+  font-size: 10px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.container .footer {
+  width: 100%;
+  background-color: #758BFD;
+}
+.container .footer .nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  padding: 24px 40px;
+  cursor: pointer;
+}
+
+.large {
+  transform: scale(1.2);
+}
+
+.small {
+  transform: scale(0.8);
+}
+
 .clear {
   display: none;
 }
