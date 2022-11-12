@@ -14,8 +14,6 @@ topSecrionImgBtn.addEventListener("click", () => {
   // console.log(inputLanguage);
 
   // changeLanguageUl.style.display = "block"
-
-  return;
 });
 
 let serchImg = document.querySelector(".serch-img");
@@ -166,11 +164,11 @@ for (let i = 0; i < data.length; i++) {
   imgBox.classList.add("img-box");
   imgBox.appendChild(img);
   let p = document.createElement("p");
-  p.classList.add("p");
+  p.classList.add("card-text");
   p.innerHTML = data[i].txt1;
 
-  let h6 = document.createElement("h6");
-  h6.classList.add("h6");
+  let h6 = document.createElement("p");
+  h6.classList.add("card-text-date");
   h6.innerHTML = data[i].txt2;
   cardsSection.appendChild(card);
   card.append(p, h6);
@@ -184,13 +182,14 @@ for (let i = 0; i < data.length; i++) {
 let arrowBtn = document.querySelectorAll(".arrow-btn");
 let accordionBox = document.querySelectorAll(".accordion-box");
 let accordionSection = document.querySelector(".accordion-section");
+let boxx = document.querySelectorAll(".boxx")
 
 for (let i = 0; i < arrowBtn.length; i++) {
   let accordionDown = document.createElement("div");
   // console.log(accordionDown);
   accordionDown.classList.add("accordion-down");
 
-  accordionBox[i].append(accordionDown);
+  boxx[i].append(accordionDown);
   let accordionText = document.createElement("p");
   accordionText.classList.add("accordion-text");
   // console.log(accordionDown);
@@ -236,18 +235,19 @@ contentImgOne.addEventListener("click", () => {
 
 let peopleCard = document.querySelectorAll(".people-card");
 let peopleImg = document.querySelectorAll(".people-img");
-
+let box = document.querySelectorAll(".box");
 let peopleImgArr = Array.from(peopleImg);
 // console.log(peopleImgArr);
 for (let i = 0; i < peopleImgArr.length; i++) {
-  let text = document.createElement("h1");
-  let textOne = document.createElement("h2");
-  text.classList.add("h1");
-  textOne.classList.add("h2");
+  let text = document.createElement("p");
+  let textOne = document.createElement("p");
+  text.classList.add("people-name");
+  textOne.classList.add("people-date");
 
   // console.log(text);
-  peopleCard[i].append(text, textOne);
+  // peopleCard[i].append(text, textOne);
   // console.log(peopleImgArr);
+  box[i].append(text, textOne);
 
   peopleImgArr[0].addEventListener("mouseover", () => {
     text.innerHTML = "Jessie Williams promoted to <br> chief of staff";
@@ -273,7 +273,4 @@ for (let i = 0; i < peopleImgArr.length; i++) {
     text.innerHTML = "";
     textOne.innerHTML = " ";
   });
-
-
-
 }

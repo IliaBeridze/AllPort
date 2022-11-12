@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./covid.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="covid-container">
+      <select name="countries" class="country-select">
+        <option value="">Choose country</option>
+      </select>
+      <div class="info-container">
+        <div class="info">
+          Location:
+          <div class="location">South America</div>
+
+          Updated: 
+          <div class="updated">2022-11-05 04:21:52 </div> 
+          Confirmed: 
+         <div class="confirmed">9718875 Population:</div> 
+          <p class="death-text clear">death:</p>
+         <div class="call clear deaths"></div>
+         <p class="death-text clear">lifeexperectancy:</p>
+         <div class="call clear lifeexperectancy"></div>
+         <p class="death-text clear">Infection-Rate:</p>
+         <div class="call clear infection"></div>
+         <p class="death-text clear">DeathRate:</p>
+         <div class="call clear deatrate"></div>
+        </div>
+      </div>
+      
+     
+      <button class="button">view more</button>
+      <button> <a href="./index.html">back</a> </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./covid.js"></script>
+  </body>
+</html>
